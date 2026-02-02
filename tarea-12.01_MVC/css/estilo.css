@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Estilo  para inicio*/
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+}
+
+.container{
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.container h1{
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.btn{
+    display: block;
+    width: 220px;
+    margin: 15px auto;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn-login{
+    background: #4e54c8;
+    color: #fff;
+}
+
+.btn-register{
+    background: #8f94fb;
+    color: #fff;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    opacity: 0.9;
+}
+
+/*Estilo login*/
+
+
+.bloques {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.bloques label {
+    margin-bottom: 6px;
+    color: #333;
+    font-weight: 600;
+}
+
+.bloques input {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bloques input:focus {
+    outline: none;
+    border-color: #4facfe;
+    box-shadow: 0 0 6px rgba(79, 172, 254, 0.6);
+}
+
+/* Botones login */
+#botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#botones input {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.3s ease;
+}
+
+#botones input[type="submit"] {
+    background-color: #306d60;
+    color: #ffffff;
+}
+
+#botones input[type="submit"]:hover {
+    background-color: #4c5f75;
+    box-shadow: 0 6px 12px rgba(79, 172, 254, 0.5);
+    transform: translateY(-2px);
+}
+
+#botones input[type="reset"] {
+    background-color: #e0e0e0;
+    color: #333333;
+}
+
+#botones input[type="reset"]:hover {
+    background-color: #cfcfcf;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/*Estio inscripcion*/
+
+/* Configuración General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #a1c4fd 0%, #c2e9fb 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Tarjeta del Formulario */
+.form-container {
+    background-color: #fffef5; /* Un blanco roto cálido como el de la imagen */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    color: #33475b;
+}
+
+h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 1.5rem;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin-bottom: 25px;
+}
+
+/* Grupos de Input */
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    flex: 0 0 160px;
+    font-weight: 600;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #3498db;
+}
+
+/* Sección de Checkboxes */
+.checkbox-section {
+    margin: 25px 0;
+}
+
+.checkbox-section p {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.check-item {
+    display: block;
+    margin-left: 60px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.footer-terms {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.required {
+    color: #555;
+    margin-left: 5px;
+}
+
+/* Botón de Enviar */
+.btn-submit {
+    display: block;
+    width: 160px;
+    margin: 20px auto 0;
+    padding: 12px;
+    background: linear-gradient(to bottom, #4a90e2, #357abd);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(to bottom, #357abd, #2a6198);
+}
